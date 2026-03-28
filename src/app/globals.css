@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-ozford-primary: var(--ozford-primary);
+  --color-ozford-accent: var(--ozford-accent);
+  --color-ozford-bg: var(--ozford-bg);
+  --color-ozford-white: var(--ozford-white);
+  --color-ozford-text: var(--ozford-text);
+  --color-ozford-title: var(--ozford-title);
+}
+
+:root {
+  --ozford-primary: #1d3353;
+  --ozford-accent: #217eaa;
+  --ozford-bg: #f2f2f3;
+  --ozford-white: #ffffff;
+  --ozford-text: #4a4a4a;
+  --ozford-title: #1d3353;
+
+  --background: var(--ozford-bg);
+  --foreground: var(--ozford-text);
+}
+
+.dark {
+  --ozford-primary: #0f1c2d;
+  --ozford-accent: #3b9ac9;
+  --ozford-bg: #0b0f19;
+  --ozford-white: #1e293b;
+  --ozford-text: #f1f5f9;
+  --ozford-title: #ffffff;
+
+  --background: var(--ozford-bg);
+  --foreground: var(--ozford-text);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
