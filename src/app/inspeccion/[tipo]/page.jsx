@@ -123,7 +123,7 @@ export default function PaginaInspeccion() {
 
   if (!config) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-white">
+      <div className="min-h-screen flex items-center justify-center bg-white dark:bg-ozford-bg">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-red-500">Error de carga</h1>
           <p className="text-gray-500">No se encontró configuración para: {vehiculoId}</p>
@@ -142,7 +142,7 @@ export default function PaginaInspeccion() {
           <ArrowLeft size={20} /> Volver al Selector
         </button>
 
-        <div className="bg-ozford-white rounded-3xl p-8 shadow-sm border border-gray-100 relative overflow-hidden mb-8">
+        <div className="bg-ozford-white dark:border-white/5 rounded-3xl p-8 shadow-sm border border-gray-100 relative overflow-hidden mb-8">
           <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-ozford-primary to-ozford-accent"></div>
           <h2 className="text-3xl font-extrabold text-ozford-title flex items-center gap-3">
             <ShieldCheck className="text-ozford-accent" size={32} />
@@ -150,7 +150,7 @@ export default function PaginaInspeccion() {
           </h2>
         </div>
 
-        <div className="bg-ozford-white rounded-3xl p-6 shadow-sm border border-gray-100 mb-8">
+        <div className="bg-ozford-white dark:border-white/5 rounded-3xl p-6 shadow-sm border border-gray-100 mb-8">
           <label className="block text-ozford-title font-bold mb-3 flex items-center gap-2">
             <Gauge size={20} className="text-ozford-accent" />
             Kilometraje Actual
@@ -160,7 +160,7 @@ export default function PaginaInspeccion() {
             placeholder="Ingrese el kilometraje"
             value={kilometraje}
             onChange={(e) => setKilometraje(e.target.value)}
-            className="w-full bg-gray-50 border border-gray-200 rounded-xl py-4 px-6 text-xl font-bold text-ozford-title focus:ring-2 focus:ring-ozford-accent outline-none transition-all"
+            className="w-full bg-gray-50 dark:bg-slate-800 border border-gray-200 dark:border-white/10 rounded-xl py-4 px-6 text-xl font-bold text-ozford-title dark:text-white dark:placeholder-white/30 focus:ring-2 focus:ring-ozford-accent outline-none transition-all"
           />
         </div>
 
