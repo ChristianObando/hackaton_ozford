@@ -19,6 +19,8 @@ export default function Footer() {
           <p className="text-sm font-medium">© {currentYear} Sistema E.S.C.U.D.O. AZUL.</p>
           <p className="text-xs text-white/50 mt-1.5 flex items-center justify-center md:justify-end gap-1.5">
             Inspección Preoperacional de Vehículos
+            proyecto desarrollado por Christisn Alexander Obando Arce y 
+            Juan Camilo Pavi Sotomayor para la hackaton de seguridad ozdord
             <svg className="w-3 h-3 text-ozford-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
             </svg>
